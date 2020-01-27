@@ -13,10 +13,10 @@ sandbox for developing our two-developer workflow created by **developer A**
  
       file_both.py in adev contains these lines:
       
-      x = 1 
-      z = 3.142 
-      boo = True 
-      abcd = 5
+      x = 1  
+      z = 3.142  
+      boo = True  
+      abcd = 5  
     
   ## step 2:
   - **D** locally makes a dev branch of the master branch for future advances: **ddev**, and pushes ddev 
@@ -26,11 +26,12 @@ sandbox for developing our two-developer workflow created by **developer A**
       - **D does not push local copy of the changed branch ddev to the repo**
 
 
-    file_both.py in ddev contains these lines: 
-    x = 1 
-    z = 2.718  
-    log = True 
-    wxyz  = 15
+      file_both.py in ddev contains these lines: 
+      
+      x = 1  
+      z = 2.718   
+      log = True  
+      wxyz  = 15  
  
 ## step 3:
 Merging with [resolving conflicts](https://github.com/cubeton/git101/blob/master/TurtorialInfo/AdditionalGitTechniques.md):
