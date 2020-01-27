@@ -1,0 +1,11 @@
+.DS_Store
+
+*.pyc
+*.swp
+*.swo
+
+_*
+
+*.fits
+*.pdf
+
