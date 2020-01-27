@@ -6,34 +6,31 @@ sandbox for developing our two-developer workflow created by **developer A**
   
   ## step 1:
   - **A** locally makes a dev branch of the master branch for future advances, **adev**, and pushes adev 
-    - A creates a file that only A edits, **file_a.md**
-    - A creates a file that both A and D will work on in their respective branches, **fileboth.md**
+    - A creates a file that only A edits, **file_a.py**
+    - A creates a file that both A and D will work on in their respective branches, **fileboth.py**
     - **A does not push local copy of the changed branch adev to the repo**
  
  
-      file_both.md in adev contains these lines:
+      file_both.py in adev contains these lines:
       
-      x = 1
-      
-      z = 3.142
-      
-      abcd
+      x = 1 
+      z = 3.142 
+      boo = True 
+      abcd = 5
     
   ## step 2:
   - **D** locally makes a dev branch of the master branch for future advances: **ddev**, and pushes ddev 
-      - B creates a file that only D edits, **file_d.md**
-      - B creates a file that both D and A work on in their respective branches, **file_both.md**, 
-      - **file_both.md** is different from A's file of the same name.
+      - B creates a file that only D edits, **file_d.py**
+      - B creates a file that both D and A work on in their respective branches, **file_both.py**, 
+      - **file_both.py** is different from A's file of the same name.
       - **D does not push local copy of the changed branch ddev to the repo**
 
 
-      file_both.md in adev contains these lines:
-      
-      x = 1
-      
-      z = 2.718
-      
-      wxyz
+    file_both.py in ddev contains these lines: 
+    x = 1 
+    z = 2.718  
+    log = True 
+    wxyz  = 15
  
 ## step 3:
 Merging with [resolving conflicts](https://github.com/cubeton/git101/blob/master/TurtorialInfo/AdditionalGitTechniques.md):
