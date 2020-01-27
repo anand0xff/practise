@@ -40,6 +40,6 @@ sandbox for developing our two-developer workflow created by **developer A**
   - D merges, resolving any conflicts by accepting A's versions
   
 ## step 4:
-  - D makes a pull request for A to merge ddev with dev
-  - A merges, (communicating to D with issue on conflicts?)
-  - After finishing the merge eventually, A merges dev with master.
+**Propagate changes of stable development branch to the master**
+  - A makes a pull request for D to merge dev with master
+  - They resolve problems using issues?
