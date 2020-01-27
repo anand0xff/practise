@@ -15,3 +15,6 @@ git checkout -b ddev origin/dev  # create branch ddev off branch <<origin>>/dev 
 add stuff to bdev; commit; push
 
 
+git rm tutorial.txt  # deleting a file locally and remotely...
+git commit -m "delete tutorial"
+git push
