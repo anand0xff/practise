@@ -45,7 +45,7 @@ sandbox for developing our two-developer workflow created by **developer A**
 - A makes a pull request to B to merge adev with the primary development branch **dev**
 - D merges, resolving any conflicts by accepting A's versions
   
-#### step 4:
+#### Step 4:
 
 **Propagate changes of stable development branch to the master**
 
