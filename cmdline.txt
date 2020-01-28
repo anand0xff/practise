@@ -15,6 +15,7 @@ $ git pull origin dev
 A & D local are synched.
 
 -------------
+#git branch -[rla] helpful
  git branch --list
         * master
 $ git checkout dev
