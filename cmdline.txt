@@ -1,6 +1,7 @@
 # line-by-line explanation:
 
 git checkout -b dev # create branch locally and switch to it
+#DT created dev branch locally.
 
 # add content, then
 git add ....; git commit -m "ghfhgdf"; git push origin dev  # branch dev is put on repo.
