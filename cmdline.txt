@@ -47,13 +47,14 @@ $ git fetch origin
 $ git diff dev origin/dev  # shows differences
 $ git merge  # merged the fetched changes to local dev file.
 
-<---
-
 git branch --list
 git checkout dev  # switch to branch dev
 
+Developer A:
 git checkout -b adev origin/dev  # create branch adev off branch <<origin>>/dev locally, switch to it
 add stuff to adev; commit; push
+
+<---
 
 git checkout -b ddev origin/dev  # create branch ddev off branch <<origin>>/dev locally, switch to it
 add stuff to bdev; commit; push
