@@ -1,13 +1,13 @@
-# line-by-line explanation:
+## line-by-line explanation:
 
-Developer D:
-git checkout -b dev # create branch locally and switch to it
-#DT created dev branch locally.
+###Developer D:
+$ git checkout -b dev   
+*D created dev branch locally and switched to it*  
 
-# added content to cmdline.txt
-add, commit, then: git push origin dev  # git push <remote> <branch>
+## D added content to cmdline.txt
+*add, commit, then: git push origin dev  # syntax is  git push <remote> <branch>*  
 
-Developer A:
+###Developer A:
 $ git pull origin dev   FAILED: 
         error: Your local changes to the following files would be overwritten by merge:
 $ git checkout cmdline.txt  # re-fetch the repo's file
@@ -35,13 +35,13 @@ nothing to commit, working tree clean
 -------------
 $ git push origin dev
 
-Developer D:
+### Developer D:
 $ git pull origin dev
 
 Branch dev on the local repo of D is in sync with the remote branch dev.
 changed cmdline.txt, pushed to origin/dev
 
-Developer A:
+### Developer A:
 $ git diff dev origin/dev  # doesn't show differences
 $ git fetch origin
 $ git diff dev origin/dev  # shows differences
@@ -50,16 +50,17 @@ $ git merge  # merged the fetched changes to local dev file.
 $ git branch --list
 $ git checkout dev  # switch to branch dev
 
-Developer A:
-$ git checkout -b adev origin/dev  # create branch adev off <<origin>>/dev, switch to it
-add stuff to adev; commit; push
+### Developer A:
+$ git checkout -b adev origin/dev  * create branch adev off <<origin>>/dev, switch to it,
+add stuff to adev; commit; push*  
 
 <---
 
-$ git checkout -b ddev origin/dev  # create branch ddev off branch <<origin>>/dev locally, switch to it
-add stuff to bdev; commit; push
+$ git checkout -b ddev origin/dev  *create branch ddev off branch <<origin>>/dev locally, switch to it
+add stuff to bdev; commit; push*
 
 
-git rm tutorial.txt  # deleting a file locally and remotely...
-git commit -m "delete tutorial"
-git push
+### helpful manoeuvres: deleting
+$ git rm tutorial.txt  *deleting a file locally and remotely...*
+$ git commit -m "delete tutorial"
+$ git push
