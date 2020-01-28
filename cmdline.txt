@@ -1,10 +1,39 @@
 # line-by-line explanation:
 
+Developer D:
 git checkout -b dev # create branch locally and switch to it
 #DT created dev branch locally.
 
-# add content, then
-git add ....; git commit -m "ghfhgdf"; git push origin dev  # branch dev is put on repo.
+# added content to cmdline.txt
+add, commit, then: git push origin dev  # git push <remote> <branch>
+
+Developer A:
+$ git pull origin dev   FAILED: 
+        error: Your local changes to the following files would be overwritten by merge:
+$ git checkout cmdline.txt  # re-fetch the repo's file
+$ git pull origin dev  
+A & D local are synched.
+
+-------------
+ git branch --list
+        * master
+$ git checkout dev
+Branch 'dev' set up to track remote branch 'dev' from 'origin'.
+Switched to a new branch 'dev'
+$ gs
+origin	https://github.com/anand0xff/practise.git (fetch)
+origin	https://github.com/anand0xff/practise.git (push)
+commit 2f4ed9a9bef163c4e645892ced86265a0e7acb45
+Author: Developer D <devd@inst.org>
+Date:   Tue Jan 28 10:04:12 2020 -0500
+
+On branch dev
+Your branch is up to date with 'origin/dev'.
+
+nothing to commit, working tree clean
+-------------
+
+<---
 
 git branch --list
 git checkout dev  # switch to branch dev
