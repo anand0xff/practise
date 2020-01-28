@@ -39,6 +39,14 @@ Developer D:
 $ git pull origin dev
 
 Branch dev on the local repo of D is in sync with the remote branch dev.
+changed cmdline.txt, pushed to origin/dev
+
+Developer A:
+$ git diff dev origin/dev  # doesn't show differences
+$ git fetch origin
+$ git diff dev origin/dev  # shows differences
+$ git merge  # merged the fetched changes to local dev file.
+
 <---
 
 git branch --list
