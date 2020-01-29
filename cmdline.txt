@@ -47,6 +47,16 @@ $ git fetch origin
 $ git diff dev origin/dev  # shows differences
 $ git merge  # merged the fetched changes to local dev file.
 
+Developer D:
+$ git fetch origin
+$ git diff dev origin/dev  # shows differences
+$ git merge  # Did not merge the fetched changes to local dev file like it did for Developer A. WHY?????????
+$ git merge origin/dev     # shows differences
+
+$ git checkout -b ddev origin/dev
+Updated cmdline.txt on ddev
+Developer A is updating cmdline.txt on his adev branch
+
 <---
 
 git branch --list
