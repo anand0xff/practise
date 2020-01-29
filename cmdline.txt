@@ -50,6 +50,25 @@ $ git merge  # merged the fetched changes to local dev file.
 $ git branch --list
 $ git checkout dev  # switch to branch dev
 
+
+Note on FETCH (https://stackoverflow.com/questions/35591887/how-to-undo-git-fetch):
+
+    Let's assume that you have your origin remote and your local develop branch
+    is based on master, but your local master is behind origin/master (but you
+    don't see it yet, because you haven't fetched origin yet).
+
+    So performing git fetch will add new commits from origin/master and tags to
+    your local repo. In some cases you don't want to see those new commits at
+    all and they will reduce readability of your history.
+
+    Having said that, you can "undo" git fetch by doing:
+
+  git update-ref refs/remotes/origin/master refs/remotes/origin/master@{1}
+
+
+
+All this does is changes the origin/master pointer to the previous state. Maybe you'll have to play with {n} a bit to get the exact state, but in general it may help.
+
 Developer A:
 $ git checkout -b adev origin/dev  # create branch adev off <<origin>>/dev, switch to it
 add stuff to adev; commit; push
