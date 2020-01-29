@@ -57,6 +57,30 @@ $ git checkout -b ddev origin/dev
 Updated cmdline.txt on ddev
 Developer A is updating cmdline.txt on his adev branch
 
+$ git add, commit, git push origin ddev
+
+[bhaskara:~/learn_github/practise] thatte% git add cmdline.txt
+[bhaskara:~/learn_github/practise] thatte% git commit -m "updated cmdline.txt on ddev"
+[ddev d54fe4b] updated cmdline.txt on ddev
+ 1 file changed, 10 insertions(+)
+[bhaskara:~/learn_github/practise] thatte% git push origin ddev
+Enter passphrase for key '/Users/thatte/.ssh/id_rsa': 
+Counting objects: 3, done.
+Delta compression using up to 8 threads.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 457 bytes | 457.00 KiB/s, done.
+Total 3 (delta 2), reused 0 (delta 0)
+remote: Resolving deltas: 100% (2/2), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ddev' on GitHub by visiting:
+remote:      https://github.com/anand0xff/practise/pull/new/ddev
+remote: 
+To github.com:anand0xff/practise.git
+ * [new branch]      ddev -> ddev
+
+
+
+
 <---
 
 git branch --list
