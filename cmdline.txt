@@ -72,6 +72,16 @@ All this does is changes the origin/master pointer to the previous state. Maybe 
 Developer A:
 $ git checkout -b adev origin/dev  # create branch adev off <<origin>>/dev, switch to it
 add stuff to adev; commit; push
+  832  git add cmdline.txt 
+  833  git commit -m "A changes to cmdline"
+  834  git push  
+       | fatal: The upstream branch of your current branch does not match
+       | the name of your current branch.  To push to the upstream branch
+       | on the remote, use
+       |     git push origin HEAD:dev
+       | To push to the branch of the same name on the remote, use
+       |     git push origin adev
+  835  git push origin adev
 
 <---
 
