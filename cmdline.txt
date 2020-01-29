@@ -82,6 +82,8 @@ add stuff to adev; commit; push
        | To push to the branch of the same name on the remote, use
        |     git push origin adev
   835  git push origin adev
+       | remote: Create a pull request for 'adev' on GitHub by visiting:
+       | remote:      https://github.com/anand0xff/practise/pull/new/adev
 
 <---
 
