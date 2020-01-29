@@ -91,6 +91,27 @@ $ git checkout -b ddev origin/dev  # create branch ddev off branch <<origin>>/de
 add stuff to bdev; commit; push
 
 
-git rm tutorial.txt  # deleting a file locally and remotely...
-git commit -m "delete tutorial"
-git push
+------
+Developer D:
+Create PR for merge of ddev , 
+Developer A merges successfully, 
+D deletes dev/ddev on github
+Developer A and Developer D locally: 
+$ git branch --all
+* adev
+  dev
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/adev
+  remotes/origin/ddev
+  remotes/origin/dev
+  remotes/origin/master
+$ git remote prune origin
+$ git branch --all
+* adev
+  dev
+  master
+  remotes/origin/HEAD -> origin/master
+  remotes/origin/adev
+  remotes/origin/dev
+  remotes/origin/master
